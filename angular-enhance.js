@@ -202,3 +202,5 @@ app.filter('toLetter', function() {
     if(num) return String.fromCharCode(64 + num);
   };
 });
+
+})(window, window.angular);
