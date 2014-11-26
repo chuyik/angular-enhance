@@ -1,0 +1,24 @@
+{
+  "name": "angular-enhance",
+  "version": "0.0.3",
+  "description": "A small library for AngularJS enhancements.",
+  "main": "angular-enhance.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bump": "0.0.16"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chuyik/angular-enhance.git"
+  },
+  "author": "Edward Chu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chuyik/angular-enhance/issues"
+  },
+  "homepage": "https://github.com/chuyik/angular-enhance"
+}
