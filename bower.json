@@ -1,0 +1,10 @@
+{
+  "name": "angular-enhance",
+  "version": "0.0.1",
+  "main": "./angular-enhance.js",
+  "ignore": [],
+  "dependencies": {
+    "angular": ">=1.2.*"
+  },
+  "homepage": "https://github.com/chuyik/angular-enhance"
+}
