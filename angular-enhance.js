@@ -4,7 +4,7 @@
  */
 (function(window, angular) {'use strict';
 
-var app = angular.module('ngEnhance');
+var app = angular.module('ngEnhance', []);
 
 // Service //////////////////////////////////
 
@@ -13,7 +13,7 @@ var app = angular.module('ngEnhance');
  */
 app.factory('myResource', function($resource) {
   return function(url, params, methods) {
-    var id = (params && params.id && params.id.charAt(0) == '@' ?
+    var id = (params && params.id && params.id.charAt(0) === '@' ?
               params.id.substr(1) : params.id) || '_id';
 
     var defaults = {
@@ -79,7 +79,7 @@ app.directive('ngEnter', function() {
 
  * @source https://gist.github.com/justinmc/d72f38339e0c654437a2
  */
-app.directive('scrollTo', function($location){
+app.directive('scrollTo', function(){
   var scrollTo = function scrollTo(eID) {
     var i;
     var startY = currentYPosition();
@@ -127,7 +127,7 @@ app.directive('scrollTo', function($location){
     var elm = document.getElementById(eID);
     var y = elm.offsetTop;
     var node = elm;
-    while (node.offsetParent && node.offsetParent != document.body) {
+    while (node.offsetParent && node.offsetParent !== document.body) {
       node = node.offsetParent;
       y += node.offsetTop;
     }
