@@ -1,6 +1,6 @@
 {
   "name": "angular-enhance",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "./angular-enhance.js",
   "ignore": [],
   "dependencies": {
