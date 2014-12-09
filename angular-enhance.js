@@ -185,15 +185,6 @@
   });
 
   /**
-   * ngRepeat n times
-   * @param  {Number} Repeat times
-   * @return {Array}  Meaningless collection
-   */
-  $scope.range = function(n) {
-    return new Array(n);
-  };
-
-  /**
    * Truncate string with ellipsis
    *
    * @usage
