@@ -96,7 +96,7 @@
       var step = Math.round(distance / 25);
       var leapY = stopY > startY ? startY + step : startY - step;
       var timer = 0;
-      if (stopY > startY) {
+      if (stopY > startY && step !== 0) {
         for (i = startY; i < stopY; i += step) {
           setTimeout('window.scrollTo(0, ' + leapY + ')', timer * speed);
           leapY += step;
